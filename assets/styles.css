@@ -15,3 +15,7 @@ p {
     font-family: 'Josefin Sans', sans-serif;
     color: white;
 }
+
+.w3-padding {
+    margin-bottom: 20px;
+}
