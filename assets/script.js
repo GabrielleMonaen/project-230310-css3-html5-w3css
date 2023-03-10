@@ -22,13 +22,15 @@ fetch('https://api.github.com/users/GabrielleMonaen/repos')
                     const card = `
                         <div class="w3-col s12 m6 l4 xl3">
                             <a href="${project.html_url}" target="_blank">
-                            <div class="w3-card w3-padding w3-hover-shadow" style="background-color: #${randomColor}; height: 200px;">
-                                <div class="w3-container">
-                                <h3 class="project-date">Project ${date}</h3>
-                                <p>${techList}</p>
-                                <p>${description}</p>
+                                <div class="w3-card w3-padding w3-hover-shadow" style="background-color: #${randomColor}; height: 200px; position: relative;">
+                                    <div style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; background-color: rgba(0, 0, 0, 0.2); z-index: 1;"></div>
+                                        <div class="w3-container" style="position: relative; z-index: 2;">
+                                            <h3 class="project-date">Project ${date}</h3>
+                                            <p>${techList}</p>
+                                            <p>${description}</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
                             </a>
                         </div>
                     `;
