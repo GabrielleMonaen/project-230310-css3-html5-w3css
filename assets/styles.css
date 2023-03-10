@@ -11,9 +11,14 @@ body {
 
 h1,
 h2,
+h3,
 p {
     font-family: 'Josefin Sans', sans-serif;
     color: white;
+}
+
+a {
+    text-decoration: none;
 }
 
 .w3-padding {
