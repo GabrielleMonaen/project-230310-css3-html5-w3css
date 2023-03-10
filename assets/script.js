@@ -15,8 +15,8 @@ fetch('https://api.github.com/users/GabrielleMonaen/repos')
                 .then(projectData => {
                     const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
                     const date = new Date(projectData.updated_at).toLocaleDateString('en-US', options).replace(/\//g, '-');
-                    const techList = projectData.topics ? `<br><i>Technologies: ${projectData.topics.join(', ')}</i>` : '';
-                    const description = projectData.description ? `<br>Description: ${projectData.description.slice(0, 100)}${projectData.description.length > 100 ? '...' : ''}` : '';
+                    const techList = projectData.topics ? `<span class="technologies"><i>Technologies: ${projectData.topics.join(', ')}</i></span>` : '';
+                    const description = projectData.description ? `<span class="description">Description: ${projectData.description.slice(0, 100)}${projectData.description.length > 100 ? '...' : ''}</span>` : '';
 
                     // Create the card HTML with the project name, date, technologies, and description
                     const card = `
@@ -24,8 +24,9 @@ fetch('https://api.github.com/users/GabrielleMonaen/repos')
                             <a href="${project.html_url}" target="_blank">
                             <div class="w3-card w3-padding w3-hover-shadow" style="background-color: #${randomColor}; height: 200px;">
                                 <div class="w3-container">
-                                <h3 style="margin-top: 0;">Project ${date}</h3>
-                                <p>${techList}${description}</p>
+                                <h3 class="project-date">Project ${date}</h3>
+                                <p>${techList}</p>
+                                <p>${description}</p>
                                 </div>
                             </div>
                             </a>
@@ -38,5 +39,3 @@ fetch('https://api.github.com/users/GabrielleMonaen/repos')
         });
     })
     .catch(error => console.log(error));
-
-
