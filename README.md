@@ -2,14 +2,14 @@
 
 # Single-Page Portfolio App
 
-## Technologies
-HTML5, CSS3, JavaScript, W3.CSS
+## Contributor
+@GabrielleMonaen
 
 ## Description
 Single-page Portfolio app that dynamically pulls completed projects from Github and displays them in a mobile-first responsive grid of cards. It makes use of a Google Font and a gradient background.
 
-## Contributor
-@GabrielleMonaen
+## Technologies
+HTML5, CSS3, JavaScript, W3.CSS
 
 ## Instructions
 To run the application, clone the repository and display index.html in a web browser.
