@@ -1,0 +1,22 @@
+{
+  "name": "project-230310-css3-html5-w3css",
+  "version": "1.0.0",
+  "description": "Mobile-first responsive single-page app written with CSS3, HTML5, JavaScript, W3.CSS and tested with JavaScript Mocha and Selenium WebDriver.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha __tests__/selenium-webdriver.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielleMonaen/project-230310-css3-html5-w3css-javascript.git"
+  },
+  "author": "Gabrielle Monaen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GabrielleMonaen/project-230310-css3-html5-w3css-javascript/issues"
+  },
+  "homepage": "https://github.com/GabrielleMonaen/project-230310-css3-html5-w3css-javascript#readme",
+  "dependencies": {
+    "selenium-webdriver": "^4.8.1"
+  }
+}
