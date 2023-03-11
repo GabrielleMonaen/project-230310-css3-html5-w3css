@@ -56,6 +56,26 @@ footer {
     margin-bottom: 20px;
 }
 
+.w3-col.s12 {
+    width: 100%;
+}
+
+@media (max-width: 890px) {
+    .w3-col.s12, 
+    .w3-col.m6 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 891px) {
+    .w3-col.m6,
+    .w3-col.l4,
+    .w3-col.xl3 {
+        width: 50%;
+    }
+}
+
+
 @media screen and (max-width: 600px) {
     .about-container {
         flex-direction: column;
