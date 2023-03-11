@@ -4,7 +4,8 @@
   "description": "Mobile-first responsive single-page app written with CSS3, HTML5, JavaScript, W3.CSS and tested with JavaScript Mocha and Selenium WebDriver.",
   "main": "index.js",
   "scripts": {
-    "test-automated": "mocha __tests__/selenium-webdriver.spec.js"
+    "test": "jest --watchAll",
+    "test-coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/GabrielleMonaen/project-230310-css3-html5-w3css-javascript#readme",
   "dependencies": {
+    "jest": "^29.5.0",
     "selenium-webdriver": "^4.8.1"
   }
 }
