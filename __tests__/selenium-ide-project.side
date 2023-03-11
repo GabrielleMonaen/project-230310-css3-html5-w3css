@@ -1,0 +1,114 @@
+{
+  "id": "d267e21a-2798-4e46-9dd5-e66287a6e017",
+  "version": "2.0",
+  "name": "Portfolio App",
+  "url": "https://project-230310-css3-html5-w3css-js.netlify.app/",
+  "tests": [{
+    "id": "077ccc26-2bb4-4b8d-83b5-99842900b264",
+    "name": "Elements are present",
+    "commands": [{
+      "id": "3fece1f3-97bc-48c5-aad8-097749818f03",
+      "comment": "",
+      "command": "open",
+      "target": "https://project-230310-css3-html5-w3css-js.netlify.app/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27cb5d67-6c6a-4856-983d-ef728d654835",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Portfolio')]", "xpath:innerText"]
+      ],
+      "value": "Portfolio"
+    }, {
+      "id": "5e8d87a0-4d73-4895-b9b4-00a1c2b82951",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.w3-container:nth-child(1) > h2",
+      "targets": [
+        ["css=.w3-container:nth-child(1) > h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Gabrielle Monaen')]", "xpath:innerText"]
+      ],
+      "value": "Gabrielle Monaen"
+    }, {
+      "id": "37653e65-210e-4255-8972-747a88fb2cf7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.w3-left-align > h3",
+      "targets": [
+        ["css=.w3-left-align > h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'About Me:')]", "xpath:innerText"]
+      ],
+      "value": "About Me:"
+    }, {
+      "id": "9abb3b7b-0271-47f5-90b1-14a282480cb5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.w3-image",
+      "targets": [
+        ["css=.w3-image", "css:finder"],
+        ["xpath=//img[@alt='Gabrielle Monaen Profile Picture']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c42ee0f7-492e-4e48-97d4-5200e5688ce4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.w3-left-align > p:nth-child(2)",
+      "targets": [
+        ["css=.w3-left-align > p:nth-child(2)", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "My career began with training in computer network engineering, software development and cryptography. I worked on web design and database design projects, as well as as a contractor in Java software development and Concordion testing. I also worked as a business mentor and managed a company for nearly 5 years. Other professional skills include course curriculum development and team leadership in agile management."
+    }, {
+      "id": "8f55fdfa-2716-426b-9c2d-dce1aeb70d92",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.w3-left-align > p:nth-child(3)",
+      "targets": [
+        ["css=.w3-left-align > p:nth-child(3)", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"]
+      ],
+      "value": "I love technology because it improves people's lives and allows businesses to innovate. I believe that now is the best time to enter a technology role and learn about post-quantum cryptography and smart environments. And I take part in training programmes to become a well-rounded tech professional."
+    }, {
+      "id": "c9e8c1fb-2f94-43ea-bcb1-592aa811c0ea",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.w3-padding:nth-child(2)",
+      "targets": [
+        ["css=.w3-padding:nth-child(2)", "css:finder"],
+        ["xpath=//main/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Github Projects:')]", "xpath:innerText"]
+      ],
+      "value": "Github Projects:"
+    }, {
+      "id": "283469a4-5014-4e1a-af43-a28c1150a3b3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.w3-container:nth-child(3) > .w3-row-padding",
+      "targets": [
+        ["css=.w3-container:nth-child(3) > .w3-row-padding", "css:finder"],
+        ["xpath=//footer/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Created by Gabrielle Monaen. License: MIT.')]", "xpath:innerText"]
+      ],
+      "value": "Created by Gabrielle Monaen. License: MIT."
+    }]
+  }],
+  "suites": [{
+    "id": "d48b704e-de4c-45cf-aae4-e8829d3a7285",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://project-230310-css3-html5-w3css-js.netlify.app/"],
+  "plugins": []
+}
