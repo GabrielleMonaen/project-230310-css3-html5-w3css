@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Redressed&display=swap');
 
 body {
     background: linear-gradient(to bottom right, gold, midnightblue);
@@ -7,26 +7,63 @@ body {
     background-position: center;
     font-family: 'Josefin Sans', sans-serif;
     color: white;
+    text-align: center;
+    /* Set a default font size and line height for the body */
+    /* font-size: 16px;
+    line-height: 1.5; */
 }
 
 h1,
 h2,
-h3,
+h3 {
+    font-family: 'Redressed', cursive;
+    color: white;
+}
+
+/* Increase the font size and weight for headings */
+h1 {
+    color: rgb(158, 66, 97);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 p {
     font-family: 'Josefin Sans', sans-serif;
     color: white;
+    /* Set a minimum font size for paragraphs */
+    font-size: 16px;
 }
 
 a {
     text-decoration: none;
 }
 
+footer {
+    margin-bottom: 10px;
+}
+
 .w3-padding {
     margin-bottom: 20px;
 }
 
+@media screen and (max-width: 600px) {
+    .about-container {
+        flex-direction: column;
+    }
+}
+
 .project-date {
-    margin-top: 4;
+    margin-top: 15px;
     margin-bottom: 19px;
 }
 
