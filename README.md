@@ -14,5 +14,8 @@ HTML5, CSS3, JavaScript, W3.CSS
 ## Instructions
 To run the application, clone the repository and display index.html in a web browser.
 
+## Testing
+To set up testing using JavaScript Mocha and Selenium WebDriver, run the command `npm install`. Once the installation is complete, you can run the tests by executing the command `npm run test`.
+
 ## Deployment
 The website is deployed at https://project-230310-css3-html5-w3css-js.netlify.app/
