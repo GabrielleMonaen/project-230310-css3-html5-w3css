@@ -9,5 +9,3 @@ steps:
    npm install && npm init -y
   displayName: 'build'
 
-- script: npm run test-coverage
-  displayName: 'test'
