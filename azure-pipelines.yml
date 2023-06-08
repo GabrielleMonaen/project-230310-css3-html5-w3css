@@ -1,0 +1,12 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: npm install
+  displayName: 'build'
+
+- script: npm run test-automated
+  displayName: 'test'
