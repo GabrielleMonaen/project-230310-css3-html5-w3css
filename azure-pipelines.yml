@@ -5,7 +5,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: npm install
+- script:
+   npm install
+   npm init -y
   displayName: 'build'
 
 - script: npm run test-automated
