@@ -10,5 +10,5 @@ steps:
    npm init -y
   displayName: 'build'
 
-- script: npm run test-automated
+- script: npm run test-coverage
   displayName: 'test'
