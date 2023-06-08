@@ -6,8 +6,7 @@ pool:
 
 steps:
 - script:
-   npm install
-   npm init -y
+   npm install && npm init -y
   displayName: 'build'
 
 - script: npm run test-coverage
