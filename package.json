@@ -4,7 +4,7 @@
   "description": "Mobile-first responsive single-page app written with CSS3, HTML5, JavaScript, W3.CSS and tested with JavaScript Mocha and Selenium WebDriver.",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll",
+    "test": "jest",
     "test-coverage": "jest --coverage"
   },
   "repository": {
