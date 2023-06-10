@@ -9,6 +9,17 @@ steps:
    npm install && npm init -y
   displayName: 'build'
 
+- script:
+   npm run test-coverage
+  displayName: 'test'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/test-results.xml'
+    testRunTitle: 'Test coverage results'
+  displayName: 'publish test results to Azure DevOps Test Plans->Runs'
+
 - task: ArchiveFiles@2
   displayName: 'Make a project zip file'
   inputs:
