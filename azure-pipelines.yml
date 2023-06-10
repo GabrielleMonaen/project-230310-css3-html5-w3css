@@ -12,7 +12,7 @@ steps:
 - task: Npm@1
   inputs:
    command: 'custom'
-   customCommand: 'run test-coverage'
+   customCommand: 'run test'
    publishTestResults: true
   displayName: 'test and publish results to Test Plans->Runs'
 
