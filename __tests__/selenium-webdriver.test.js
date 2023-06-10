@@ -8,10 +8,6 @@ describe('Elements are present', () => {
     driver = await new Builder().forBrowser('chrome').build();
   });
 
-  afterAll(async () => {
-    await driver.quit();
-  });
-
   test('Elements are present', async () => {
     // Test name: Elements are present
     // Step # | name | target | value
