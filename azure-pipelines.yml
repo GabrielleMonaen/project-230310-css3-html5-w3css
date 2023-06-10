@@ -11,9 +11,10 @@ steps:
 
 - task: Npm@1
   inputs:
-   command: 'run test-coverage'
+   command: 'custom'
+   customCommand: 'run test-coverage'
    publishTestResults: true
-  displayName: 'test and publish test results to Azure DevOps Test Plans->Runs'
+  displayName: 'test and publish results to Test Plans->Runs'
 
 - task: ArchiveFiles@2
   displayName: 'Make a project zip file'
