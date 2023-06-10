@@ -11,11 +11,8 @@ steps:
 
 - task: Npm@1
   inputs:
-   command: 'custom'
-   customCommand: 'run test-coverage'
+   command: 'run test-coverage'
    publishTestResults: true
-   testResultsFiles: '**/test-results.xml'
-   testRunTitle: 'Test coverage results'
   displayName: 'test and publish test results to Azure DevOps Test Plans->Runs'
 
 - task: ArchiveFiles@2
